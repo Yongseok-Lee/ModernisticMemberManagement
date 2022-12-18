@@ -9,6 +9,21 @@
 	<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 	<!-- Main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		const message = "${message}";
+		if (message === "yes")
+		{
+			alert("계정 생성에 성공하였습니다. 로그인해주십시오.");
+		}
+		else if (message === "wrong")
+		{
+			alert("아이디나 비밀번호가 일치하지 않습니다. 다시 시도해주세요.");
+		}
+		else if (message === "bye")
+		{
+			alert("로그아웃되었습니다. 이용해주셔서 감사합니다.");
+		}
+	</script>
 </head>
 <body>
 	<div class="main">
@@ -24,7 +39,7 @@
 					</div>
 					<div class="signin-form">
 						<h2 class="form-title">Sign In</h2>
-						<form method="" action="" class="register-form" id="login-form">
+						<form method="post" action="login_check" class="register-form" id="login-form">
 							<div class="form-group">
 								<label for="id">
 									<i class="zmdi zmdi-graduation-cap"></i>

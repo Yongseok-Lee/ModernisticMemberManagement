@@ -15,6 +15,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	<!-- Core theme CSS (includes Bootstrap)-->
 	<link href="css/index-styles.css" rel="stylesheet">
+	<script>
+		function logout()
+		{
+			const isOK = confirm("로그아웃하시겠습니까?");
+			if (isOK)
+			{
+				location.href="/logout";
+			}
+		}
+	</script>
 </head>
 <body id="page-top">
 	<!-- Navigation-->

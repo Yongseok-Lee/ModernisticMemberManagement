@@ -9,6 +9,13 @@
 	<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 	<!-- Main css -->
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		const message = "${message}";
+		if (message === "no")
+		{
+			alert("계정 생성이 실패하였습니다. 다시 시도해주십시오.");
+		}
+	</script>
 </head>
 <body>
 	<div class="main">
@@ -18,7 +25,7 @@
 				<div class="signup-content">
 					<div class="signup-form">
 						<h2 class="form-title">Sign Up</h2>
-						<form method="post" action="" class="register-form" id="register-form">
+						<form method="post" action="register_check" class="register-form" id="register-form">
 							<div class="form-group">
 								<label for="id">
 									<i class="zmdi zmdi-graduation-cap"></i>
@@ -72,7 +79,7 @@
 						<figure>
 							<img src="images/signup-image.jpg" alt="sing up image">
 						</figure>
-						<a href="login.jsp" class="signup-image-link">I am already member</a>
+						<a href="login" class="signup-image-link">I am already member</a>
 					</div>
 				</div>
 			</div>
